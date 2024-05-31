@@ -115,7 +115,7 @@ function ChatGemini({}: Props) {
   };
 
   return (
-    <div className="max-w-[70%] w-full flex flex-col justify-between">
+    <div className="md:max-w-[70%] w-full flex flex-col justify-between">
       <div>
         <MessageComponent messages={messages} />
         {loading && <Loader />}

@@ -22,14 +22,14 @@ const FormComponents = ({
     <div className="">
       <form
         onSubmit={(e) => generateAnswer(e as FormEvent)}
-        className=" flex gap-5 m-4 bottom-0 fixed bg-white p-4 rounded-full max-w-[59%] w-[59%]"
+        className=" flex md:gap-5 gap-2 m-4 bottom-0 fixed bg-white p-4 rounded-full md:max-w-[59%] md:w-[59%]"
       >
         {imagePreview && (
           <label htmlFor="file" className="cursor-pointer">
             <Image
               src={imagePreview}
               alt="profile"
-              className="bg-cover rounded-full w-32 h-32 "
+              className="bg-cover rounded-full md:w-32 md:h-32 h-16 w-20"
               width={200}
               height={200}
             ></Image>
